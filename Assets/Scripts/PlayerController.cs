@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float turnSpeed;    
     [SerializeField] float speed;
 
-    // private Animator _playerAnim;
+    private Animator _playerAnim;
 
     private Rigidbody _playerRb;
     public float force;
@@ -48,11 +48,11 @@ public class PlayerController : MonoBehaviour
 
         if(forwardInput != 0 || horizontalInput != 0)
         {
-            // _playerAnim.SetBool("Walk", true);
+           //  _playerAnim.SetBool("Walk", true);
         } 
         else 
         {
-            // _playerAnim.SetBool("Walk", false);    
+           //  _playerAnim.SetBool("Walk", false);    
         }
 
         // press space to jump - player is jumping
