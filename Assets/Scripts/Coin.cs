@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
+
+    private ScoreTimer scoreUI; //adds score to ScoreTimer
+
+
     private GameObject _player;
     public float turnSpeed;
     public bool isRotating;
@@ -17,7 +21,10 @@ public class Coin : MonoBehaviour
     Vector3 velocity;
 
 
-
+    void Start()
+    {
+        scoreUI = GameObject.Find("Canvas").GetComponent<ScoreTimer>(); //finds the script
+    }
 
     void FixedUpdate ()
     {
@@ -31,8 +38,10 @@ public class Coin : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
+            scoreUI.addScore(); //adds one to the score in the other script
             isRotating = true;
             Destroy(this.gameObject,1.5f);
+            
         }
     }
 
