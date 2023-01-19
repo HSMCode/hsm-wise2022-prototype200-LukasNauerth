@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
     private float horizontalInput;
     private float forwardInput;
     [SerializeField] float turnSpeed;    
@@ -124,7 +125,8 @@ public class PlayerController : MonoBehaviour
                 // _playerAnim.SetBool("Land", false);
                 isLanding = false;
             }
+
         }
     }
 
-    }
+}
