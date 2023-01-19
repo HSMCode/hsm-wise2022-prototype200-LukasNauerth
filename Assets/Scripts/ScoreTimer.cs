@@ -13,21 +13,22 @@ public class ScoreTimer : MonoBehaviour
     //Variables Timer
     private Text timerUI;
     private string timerText = "Zeit: ";
-    private float timeLeft = 60f;
-    private bool countingDown; //Timer runnig down
+    public float timeLeft = 60f;
+    private bool countingDown; //Timer running down
 
 
     //Variables Score 
     private Text scoreUI;
-    private string scoreText = "Münzen: ";
+    private string scoreText = "Coins Collected: ";
     private int currentScore = 0;
     public int winScore = 10;
 
     //result Variables
     private bool gameWon;
     private Text resultUI;
-    private string resultWon = "Du has gewonnen!";
-    private string resultLost = "Du has verloren!";
+    private string resultWon = "Du hast gewonnen!";
+    private string resultLost = "Du hast verloren!";
+    
 
     // Start is called before the first frame update
     void Start()
