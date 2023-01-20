@@ -123,4 +123,6 @@ public class ScoreTimer : MonoBehaviour
         currentScore++;
         scoreUI.text = scoreText + currentScore.ToString(); 
     }
+
+    
 }
